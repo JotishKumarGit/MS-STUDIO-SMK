@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.about-btn{
+    background-color: #4A7856;
+    color: #FAF3E0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.about-btn:hover{
+    background-color: #3E6046;
+    color: #FFFFFF;
+}
+
+/* services */
+.service-box {
+    border: 1px solid #C19A6B; /* your original border */
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;      
+    background-color: #fff; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 380px;
+}
+
+.service-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    font-size: 50px;          
+    color: #C19A6B;            
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3E3E3E;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.service-box button {
+    background-color: #C19A6B;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-box button:hover {
+    background-color: #a67550; /* slightly darker shade on hover */
+}
+
+
+
+
+/* Background: #FAF3E0 (Light Beige)
+
+Text: #3E3E3E (Dark Grey)
+
+Primary Accent: #8B5E3C (Wood Brown)
+
+Secondary Accent: #C19A6B (Tan)
+
+Highlight / Button Color: #4A7856 (Olive Green) */
