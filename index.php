@@ -15,95 +15,8 @@
 
 <body>
 
-    <!-- Topbar -->
-    <div class="container-fluid py-2 d-none d-md-block" style="color: rgb(61, 95, 95); background-color: aliceblue;">
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-12 ">
-                    <div class=" d-flex justify-content-between d-block">
-                        <div>
-                            <i class="bi bi-envelope"></i> Info@studiosmk.com || Sudhir@studiosmk.com
-                            <i class="bi bi-telephone"></i> +91 9810404460
-                        </div>
-                        <div>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-twitter"></i>
-                            <i class="bi bi-linkedin"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color:#8B5E3C;;">
-        <div class="container-fluid">
-            <!-- Brand on the left -->
-            <a class="navbar-brand" href="#" style="color: #FAF3E0; ">MS STUDIO SMK</a>
-
-            <!-- Toggler button for offcanvas menu on small screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Regular menu for large screens -->
-            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">TV Wall Cabinet</a></li>
-                            <li><a class="dropdown-item" href="#">Table Lamp</a></li>
-                            <li><a class="dropdown-item" href="#">Sofa</a></li>
-                            <li><a class="dropdown-item" href="#">Mirror</a></li>
-                            <li><a class="dropdown-item" href="#">Dining Table</a></li>
-                            <li><a class="dropdown-item" href="#">Console Table</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Offcanvas menu for small screens -->
-            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MS STUDIO SMK</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown">Products</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">TV Wall Cabinet</a></li>
-                                <li><a class="dropdown-item" href="#">Table Lamp</a></li>
-                                <li><a class="dropdown-item" href="#">Sofa</a></li>
-                                <li><a class="dropdown-item" href="#">Mirror</a></li>
-                                <li><a class="dropdown-item" href="#">Dining Table</a></li>
-                                <li><a class="dropdown-item" href="#">Console Table</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </nav>
+    <!-- header -->
+    <?php include('header.php') ?>
 
     <!-- carousel -->
     <div id="carouselExample" class="carousel slide">
@@ -142,7 +55,7 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-md-6 " data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
-                            <img src="assets/img/furniture.jpg" height="auto" width="100%" alt="">
+                            <img src="assets/img/Dining_table.jpeg" height="auto" width="100%" alt="">
                         </div>
                         <div class="col-md-6 " data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                             <h2 class="h2_color">Our MS STUDIO SMK</h2>
@@ -170,7 +83,7 @@
                                 <li>Sustainable Approach</li>
                                 <li>Customer First</li>
                             </ul>
-                            <button class="about-btn">Read More</button>
+                            <button class="about-btn"><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                         </div>
                     </div>
                 </div>
@@ -195,7 +108,7 @@
                             <h5 class="card-title text-center" style="color: #3E3E3E;">Console Table</h5>
                             <p data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200" class="card-text "
                                 style="color: #3E3E3E;">A narrow table ideal for entryways or displaying décor items.</p>
-                            <a href="bed.php" class=" text-center about-btn text-decoration-none">View Details</a>
+                            <a href="console_table.php" class=" text-center about-btn text-decoration-none">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -208,7 +121,7 @@
                             <h5 class="card-title text-center" style="color: #3E3E3E;">Dining Table</h5>
                             <p data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200" class="card-text "
                                 style="color: #3E3E3E;">A sturdy centerpiece for enjoying meals and conversations together.</p>
-                            <a href="coffee_table.php" class=" text-center about-btn text-decoration-none">View
+                            <a href="dining_table.php" class=" text-center about-btn text-decoration-none">View
                                 Details</a>
                         </div>
                     </div>
@@ -222,12 +135,12 @@
                             <h5 class="card-title text-center" style="color: #3E3E3E;">Mirror</h5>
                             <p data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200" class="card-text "
                                 style="color: #3E3E3E;">A reflective surface that enhances space and light in your room.</p>
-                            <a href="dining_table.php" class=" text-center about-btn text-decoration-none">View
+                            <a href="mirror.php" class=" text-center about-btn text-decoration-none">View
                                 Details</a>
                         </div>
                     </div>
                 </div>
-                <!-- 4 -->  
+                <!-- 4 -->
                 <div class="col-md-3 mb-2">
                     <div class="card text-center">
                         <img src="assets/img/Sofa.jpeg" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000"
@@ -249,7 +162,7 @@
                             <h5 class="card-title text-center" style="color: #3E3E3E;">Table Lamp</h5>
                             <p data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200" class="card-text "
                                 style="color: #3E3E3E;">A compact lighting fixture that adds warmth and ambiance to any room.</p>
-                            <a href="wardrobe.php" class=" text-center about-btn text-decoration-none">View Details</a>
+                            <a href="table_lamp.php" class=" text-center about-btn text-decoration-none">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +175,7 @@
                             <h5 class="card-title text-center" style="color: #3E3E3E;">TV Wall Cabinet</h5>
                             <p data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200" class="card-text "
                                 style="color: #3E3E3E;">A sleek storage unit designed to hold and display your TV with style and organization.</p>
-                            <a href="wardrobe.php" class=" text-center about-btn text-decoration-none">View Details</a>
+                            <a href="tv_wall_cabinet.php" class=" text-center about-btn text-decoration-none">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -290,7 +203,7 @@
                             Get furniture tailored to your style and space. Our experts create unique designs that
                             perfectly fit your home and needs.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
                 <!-- 2 -->
@@ -303,7 +216,7 @@
                             Fast and reliable delivery straight to your doorstep. We ensure your furniture arrives
                             safely and on time.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
                 <!-- 3 -->
@@ -316,7 +229,7 @@
                             Professional assembly and setup of your furniture for a perfect fit. Hassle-free
                             installation right at your home.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
                 <!-- 4 -->
@@ -329,7 +242,7 @@
                             Keep your furniture in perfect condition with our expert repair and maintenance services. We
                             fix damages and ensure long-lasting quality.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
 
@@ -343,7 +256,7 @@
                             Get expert advice on furniture layout and home décor. We help you create a stylish and
                             functional living space.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
 
@@ -357,7 +270,7 @@
                             Choose the perfect wood, upholstery, and finishes for your furniture. We guide you to select
                             materials that match style and durability.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
 
@@ -371,7 +284,7 @@
                             Enjoy peace of mind with our warranty and dedicated support. We ensure your furniture stays
                             protected and maintained.
                         </p>
-                        <button>Read More</button>
+                        <button><a href="contact.php" class="text-white text-decoration-none">Read More</a></button>
                     </div>
                 </div>
 
@@ -516,6 +429,75 @@
         </div>
     </section>
 
+    <!-- blog sections  -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="text-center mb-4" data-aos="zoom-in">Our Blog & Insights</h2>
+            <p class="text-center mb-5" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1200">
+                Discover the latest updates, tips, and stories from our world of premium furniture and home decor.
+                Learn about our products, trends, and expert advice to elevate your living and workspace.
+            </p>
+
+            <!-- Blog Cards -->
+            <div class="row g-4">
+
+                <!-- Sofa Blog Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s;">
+                        <img src="assets/img/Sofa.jpeg" class="card-img-top" alt="Luxury Sofa" style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Sofa Trends 2025</h5>
+                            <p class="card-text">Explore the latest designs in sofas combining comfort, style, and durability for your living room.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mirror Blog Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s;">
+                        <img src="assets/img/Mirror.jpeg" class="card-img-top" alt="Elegant Mirror" style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Decorative Mirrors for Every Room</h5>
+                            <p class="card-text">Discover how mirrors can enhance the aesthetic and spatial feel of your interiors with style.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dining Table Blog Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0" style="transition: transform 0.3s;">
+                        <img src="assets/img/Dining_table.jpeg" class="card-img-top" alt="Modern Dining Table" style="height:250px; object-fit:cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Choosing the Perfect Dining Table</h5>
+                            <p class="card-text">Tips and ideas for selecting dining tables that fit your space, style, and family needs perfectly.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-title {
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+    </style>
+
     <!-- contact us form -->
     <div class="container-fluid py-5" style="background-color: #F1E4CF;">
         <div class="container">
@@ -527,6 +509,7 @@
                 Get in touch with us for inquiries, support, or custom furniture requests. Complete the form and our
                 experts will respond as soon as possible.
             </p>
+
             <div class="row justify-content-center g-4 align-items-center">
                 <!-- Left Side: Map -->
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -539,7 +522,7 @@
 
                 <!-- Right Side: Contact Form -->
                 <div class="col-md-6">
-                    <form
+                    <form id="contactForm"
                         style="background-color: #FAF3E0; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
                         <div class="mb-3">
                             <label for="name" class="form-label" style="color: #4A7856; font-weight: 600;">Name</label>
@@ -564,7 +547,7 @@
                             <textarea class="form-control" id="message" rows="5"
                                 placeholder="Write your message here..." style="border: 1px solid #C19A6B;"></textarea>
                         </div>
-                        <button type="submit" class="btn"
+                        <button type="button" id="whatsappBtn" class="btn"
                             style="background-color: #4A7856; color: #FAF3E0; font-weight: 600; width: 100%;">
                             Send Message
                         </button>
@@ -575,129 +558,4 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer-section"
-        style="background-color: #FAF3E0; padding: 60px 0; font-family: 'Poppins', sans-serif; color: #3E3E3E;">
-        <div class="container">
-            <div class="row">
-                <!-- Brand Info -->
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                    <h5 class="footer-heading"
-                        style="color: #8B5E3C; font-family: 'Playfair Display', serif; margin-bottom: 15px;">MS STUDIO
-                        SMK</h5>
-                    <p class="footer-text" style="line-height: 1.6;">Crafting Quality Furniture with Passion and
-                        Precision.</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                    <h5 class="footer-heading" style="color: #8B5E3C; margin-bottom: 15px;">Quick Links</h5>
-                    <ul class="footer-links list-unstyled">
-                        <li><a href="#" style="color: #4A7856; text-decoration: none; transition: color 0.3s;">Home</a>
-                        </li>
-                        <li><a href="#" style="color: #4A7856; text-decoration: none; transition: color 0.3s;">About</a>
-                        </li>
-                        <li><a href="#"
-                                style="color: #4A7856; text-decoration: none; transition: color 0.3s;">Products</a></li>
-                        <li><a href="#"
-                                style="color: #4A7856; text-decoration: none; transition: color 0.3s;">Services</a></li>
-                        <li><a href="#"
-                                style="color: #4A7856; text-decoration: none; transition: color 0.3s;">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <h5 class="footer-heading" style="color: #8B5E3C; margin-bottom: 15px;">Contact Us</h5>
-                    <p class="footer-text" style="line-height: 1.6;">Plot No. B-19, Block-B, Sector-57, Noida, Gautam
-                        Buddha Nagar, Uttar Pradesh, 201301</p>
-                    <p class="footer-text" style="line-height: 1.6;">Email: <a href="mailto:Info@studiosmk.com"
-                            style="color: #4A7856;">Info@studiosmk.com</a> || <a href="mailto:Sudhir@studiosmk.com"
-                            style="color: #4A7856;">Sudhir@studiosmk.com</a></p>
-                    <p class="footer-text" style="line-height: 1.6;">Phone: <a href="tel:+919810404460"
-                            style="color: #4A7856;">+91 9810404460</a></p>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="400">
-                    <h5 class="footer-heading" style="color: #8B5E3C; margin-bottom: 15px;">Newsletter</h5>
-                    <p class="footer-text" style="line-height: 1.6;">Subscribe to our newsletter for the latest
-                        furniture trends and exclusive offers.</p>
-                    <form>
-                        <div style="display: flex; width: 50%; max-width: 60%;">
-                            <input type="email" placeholder="Your Email" max-width="50px"
-                                style="padding:10px; flex: 1; border:1px solid #C19A6B; border-radius:4px 0 0 4px; box-sizing: border-box;">
-                            <button type="submit"
-                                style="background-color:#4A7856; color:#FAF3E0; border:none; padding:10px 20px; border-radius:0 4px 4px 0; cursor:pointer; transition: background 0.3s; box-sizing: border-box;">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom text-center mt-4" style="color: #3E3E3E; font-size: 14px;">
-                &copy; 2025 MS Studio SMK. All Rights Reserved. <span>Design By <a
-                        href="https://trade4export.com/">Trade4Export</a></span>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Optional: AOS Library for Fade Animations -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-
-    <!-- Hover Effect CSS -->
-    <style>
-        .footer-links li a:hover {
-            color: #8B5E3C;
-        }
-
-        .footer-section input:focus {
-            outline: none;
-            border-color: #8B5E3C;
-            box-shadow: 0 0 5px rgba(139, 94, 60, 0.5);
-        }
-
-        .footer-section button:hover {
-            background-color: #8B5E3C;
-        }
-    </style>
-    <!-- JS for Accordion -->
-    <script>
-        const faqQuestions = document.querySelectorAll('.faq-question');
-
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('.faq-icon');
-                if (answer.style.display === 'block') {
-                    answer.style.display = 'none';
-                    icon.textContent = '+';
-                } else {
-                    // Close all other answers
-                    document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
-                    document.querySelectorAll('.faq-icon').forEach(ic => ic.textContent = '+');
-                    // Open clicked answer
-                    answer.style.display = 'block';
-                    icon.textContent = '-';
-                }
-            });
-        });
-    </script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <?php include('footer.php') ?>
